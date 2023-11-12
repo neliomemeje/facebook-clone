@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left flex" onclick="removeSettingsMenu()">
+            <i class="arrow fa-solid fa-arrow-left"></i>
+            <div class="flex logo">
+                <i class="fa-brands fa-square-facebook logo-icon"></i>
+                <span class="text">riendsbook</span>
+            </div>
+            <div class="search-box flex" onclick="removeSettingsMenu()">
+                <img src="images/search.png" class="search-icon">
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-right flex">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-brands fa-facebook-messenger"></i></li>
+                <li><i class="fa-solid fa-bell"></i></li>
+            </ul>
+            <div class="nav-user-icon flex online">
+                <img src="images/member-2.png">
+            </div>
+        </div>
+        <div class="imp-links menu">
+            <div class="imp-links-container">
+                <a href="#" class="on-hover-bg">
+                    <img src="images/member-2.png"> Jackson Aston
+                </a>
+                <a href="#" class="on-hover-bg">
+                    <img src="images/news.png"> Latest News
+                </a>
+                <a href="#" class="on-hover-bg">
+                    <img src="images/friends.png"> Friends
+                </a>
+                <a href="#" class="on-hover-bg">
+                    <img src="images/group.png"> Group
+                </a>
+                <a href="#" class="on-hover-bg">
+                    <img src="images/marketplace.png"> Marketplace
+                </a>
+                <a href="#" class="on-hover-bg">
+                    <img src="images/watch.png"> Watch
+                </a>
+                <a href="#">See More</a>
+            </div>
+        </div>
+        <div class="settings-menu hide">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+           <div class="settings-container">
+                <div class="user-profile flex">
+                    <img src="images/member-2.png">
+                    <div>
+                        <p>Jackson Aston</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile flex">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give feedback</p>
+                        <a href="#">Help us to improve the new design.</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="8px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="8px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="8px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="8px"></a>
+                </div>
+           </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-sidebar sticky" onclick="removeSettingsMenu()">
+           <div class="imp-links">
+            <a href="#" class="on-hover-bg">
+                <img src="images/member-2.png"> Jackson Aston
+            </a>
+            <a href="#" class="on-hover-bg">
+                <img src="images/news.png"> Latest News
+            </a>
+            <a href="#" class="on-hover-bg">
+                <img src="images/friends.png"> Friends
+            </a>
+            <a href="#" class="on-hover-bg">
+                <img src="images/group.png"> Group
+            </a>
+            <a href="#" class="on-hover-bg">
+                <img src="images/marketplace.png"> Marketplace
+            </a>
+            <a href="#" class="on-hover-bg">
+                <img src="images/watch.png"> Watch
+            </a>
+            <a href="#" class="on-hover-bg">See More</a>
+            <hr>
+           </div>
+           <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+            <a href="#"><img src="images/shortcut-2.png">Web Design</a>
+            <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+            <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+           </div>
+        </div>
+        <div class="main-content" onclick="removeSettingsMenu()">
+            <div class="story-container">
+                <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="story-gallery flex">
+                    <div class="story story1">
+                        <img src="images/upload.png">
+                        <p>Create story</p>
+                        <div class="bg-bottom"></div>
+                    </div>
+                    <div class="story story2">
+                        <img src="images/member-1.png">
+                        <p>Allison</p>
+                    </div>
+                    <div class="story story3">
+                        <img src="images/member-5.png">
+                        <p>Jackson</p>
+                    </div>
+                    <div class="story story5">
+                        <img src="images/member-4.png">
+                        <p>John Doe</p>
+                    </div>
+                    <div class="story story4">
+                        <img src="images/member-3.png">
+                        <p>Samona</p>
+                    </div>
+                    <div class="story story6">
+                        <img src="images/profile-pic.png">
+                        <p>Ethan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="write-post-container">
+               <div class="user-profile flex">
+                    <img src="images/member-2.png">
+                    <textarea rows="3" placeholder="What's on your mind, Jackson?"></textarea>
+               </div>
+               <hr>
+                <div class="add-post-links flex">
+                    <a href="#" class="on-hover-bg"><img src="images/live-video.png">Live Video</a>
+                    <a href="#" class="on-hover-bg"><img src="images/photo.png">Photo/Video</a>
+                    <a href="#" class="on-hover-bg"><img src="images/feeling.png">Feeling/Activity</a>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row flex">
+                    <div class="user-profile flex">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p>Jackson Aston</p>
+                            <span>July, 2022, 10:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>           
+                <img src="images/feed-image-1.png" class="post-img">
+                <div class="post-row flex">
+                    <div class="activity-icons flex">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">45</div>
+                        <div><img src="images/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row flex">
+                    <div class="user-profile flex">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p>Jackson Aston</p>
+                            <span>March 5, 2022, 10:10 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+            
+                <img src="images/feed-image-2.png" class="post-img">
+                <div class="post-row flex">
+                    <div class="activity-icons flex">
+                        <div><img src="images/like.png">200</div>
+                        <div><img src="images/comments.png">60</div>
+                        <div><img src="images/share.png">35</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row flex">
+                    <div class="user-profile flex">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p>Jackson Aston</p>
+                            <span>Jan 5, 2022, 2:10 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>     
+                <img src="images/feed-image-3.png" class="post-img">
+                <div class="post-row flex">
+                    <div class="activity-icons flex">
+                        <div><img src="images/like.png">26</div>
+                        <div><img src="images/comments.png">10</div>
+                        <div><img src="images/share.png">5</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row flex">
+                    <div class="user-profile flex">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p>Jackson Aston</p>
+                            <span>Jan 1, 2022, 5:10 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <img src="images/feed-image-4.png" class="post-img">
+                <div class="post-row flex">
+                    <div class="activity-icons flex">
+                        <div><img src="images/like.png">26</div>
+                        <div><img src="images/comments.png">10</div>
+                        <div><img src="images/share.png">5</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row flex">
+                    <div class="user-profile flex">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p>Jackson Aston</p>
+                            <span>Jan 1, 2022, 3:24 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <img src="images/feed-image-5.png" class="post-img">
+                <div class="post-row flex">
+                    <div class="activity-icons flex">
+                        <div><img src="images/like.png">32</div>
+                        <div><img src="images/comments.png">15</div>
+                        <div><img src="images/share.png">4</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+        <div class="right-sidebar sticky" onclick="removeSettingsMenu()">
+            <div class="sidebar-title flex">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+           <div class="event flex">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+           </div> 
+            <div class="event flex">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title flex">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title flex">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list flex">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list flex">
+                <div class="online">
+                    <img src="images/profile-pic.png">
+                </div>
+                <p>John Nicholson</p>
+            </div>
+            <div class="online-list flex">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+            <div class="online-list flex">
+                <div class="online">
+                    <img src="images/member-4.png">
+                </div>
+                <p>John Doe</p>
+            </div>
+            <div class="online-list flex">
+                <div class="online">
+                    <img src="images/member-5.png">
+                </div>
+                <p>Mike Miller</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-area-modal">
+        <div class="text-container">
+            <div class="post-header">
+                <h3>Create post</h3>
+                <i class="fa-solid fa-square-xmark"></i>
+                <hr>
+            </div>
+            <div class="user-container">
+                <div class="user-profile flex">
+                    <img src="images/member-2.png">
+                    <div>
+                        <p>Jackson Aston</p>
+                        <div class="user-friends">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Friends</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <textarea rows="5" placeholder="What's on your mind, Jackson?"></textarea>
+                <div class="add-to-post flex">
+                    <p>Add to your post</p>
+                    <div class="flex">
+                        <a href="#"><i class="fa-regular fa-images green"></i></a>
+                        <a href="#"><i class="fa-solid fa-user-tag blue"></i></a>
+                        <a href="#"><i class="fa-solid fa-face-grin orange"></i></a>
+                        <a href="#"><i class="fa-solid fa-ellipsis-h "></i></a>
+                    </div>       
+                </div>
+                <button class="post-btn" disabled>Post</button>
+            </div>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
