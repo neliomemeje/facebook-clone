@@ -2,7 +2,7 @@ const userIcon = document.querySelector(".nav-user-icon.online");
 const settingsMenu = document.querySelector(".settings-menu");
 const menu = document.querySelector(".nav-right i.fa-bars");
 const menuInfo = document.querySelector(".imp-links.menu");
-const searchIcon = document.querySelector(".search-box .search-icon");
+const searchIcon = document.querySelector(".search-box");
 const darkTheme = document.getElementById("dark-btn");
 const redBtn = document.querySelector(".settings-menu span");
 const textarea = document.querySelector(".user-profile textarea");
@@ -106,7 +106,6 @@ prevBtn.addEventListener("click", () => {
 });
 
 function updateImg() {
-  console.log(startIndex);
   if (currentImg > 1) {
     prevBtn.style.display = "block";
   } else {
@@ -119,25 +118,6 @@ function updateImg() {
   } else {
     nextBtn.style.display = "block";
   }
-
   gallery.classList.add("show-more-gallery");
   gallery.style.transform = `translateX(-${(currentImg - 1) * 25}%)`;
 }
-function reportWindowSize() {
-  if (window.innerWidth > 600) {
-    arrowBtn.style.display = "none";
-    menu.style.display = "block";
-    logo.classList.remove("hide");
-  }
-  if (window.innerWidth < 600) {
-    searchInput.classList.remove("display");
-  }
-}
-
-window.onresize = reportWindowSize;
-
-// searchIcon.classList.remove("expand");
-// searchInput.classList.remove("display");
-// logo.classList.remove("hide");
-// arrowBtn.style.display = "none";
-// menu.style.display = "block";

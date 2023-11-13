@@ -95,7 +95,7 @@ i.arrow:hover{
     border-radius: 20px;
     width: 270px;
     padding: 11px 15px;
-    margin: 0 10px ;
+    margin: 0 5px ;
 }
 .search-box input {
     width: 100%;
@@ -741,6 +741,9 @@ i.arrow:hover{
     }
     .search-box img {
         width: 14px;
+    }
+    .nav-right ul li i {
+        margin: 0 10px;
     }
 }
 .search-box.expand{
