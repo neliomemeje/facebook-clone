@@ -2,7 +2,7 @@ const userIcon = document.querySelector(".nav-user-icon.online");
 const settingsMenu = document.querySelector(".settings-menu");
 const menu = document.querySelector(".nav-right i.fa-bars");
 const menuInfo = document.querySelector(".imp-links.menu");
-const searchIcon = document.querySelector(".search-box");
+const searchBox = document.querySelector(".search-box");
 const darkTheme = document.getElementById("dark-btn");
 const redBtn = document.querySelector(".settings-menu span");
 const textarea = document.querySelector(".user-profile textarea");
@@ -26,15 +26,15 @@ userIcon.addEventListener("click", () => {
   settingsMenu.classList.toggle("show");
   menuInfo.classList.remove("show");
 });
-searchIcon.addEventListener("click", () => {
-  searchIcon.classList.add("expand");
+searchBox.addEventListener("click", () => {
+  searchBox.classList.add("expand");
   searchInput.classList.add("display");
   logo.classList.add("hide");
   arrowBtn.style.display = "block";
   menu.style.display = "none";
 });
 arrowBtn.addEventListener("click", () => {
-  searchIcon.classList.remove("expand");
+  searchBox.classList.remove("expand");
   searchInput.classList.remove("display");
   logo.classList.remove("hide");
   arrowBtn.style.display = "none";
